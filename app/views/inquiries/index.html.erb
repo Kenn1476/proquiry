@@ -14,9 +14,11 @@
         </ul>
       </div>
 
-      <p><%= inquiry.text %></p>
+      <p><%= inquiry.reference_number %></p>
       <span class="name">
-        <%= inquiry.name %>
+        <%= inquiry.invoice_number%>
+        <%= inquiry.customer_email %>
+        <%= inquiry.text %>
       </span>
     </div>
   <% end %>

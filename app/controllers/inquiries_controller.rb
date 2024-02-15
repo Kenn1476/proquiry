@@ -34,7 +34,7 @@ class InquiriesController < ApplicationController
 
   private
   def inquiry_params
-    params.require(:inquiry).permit(:name, :image, :text)
+    params.require(:inquiry).permit(:reference_number, :invoice_number, :customer_email, :text)
   end
 
 

@@ -9,7 +9,10 @@
         </li>
       </ul>
     </div>
-    <p><%= @inquiry.text %></p>
-    <span class="name"><%= @inquiry.name %>
-    </span>
+   <p><%= @inquiry.reference_number %></p>
+      <span class="name">
+        <%= @inquiry.invoice_number%>
+        <%= @inquiry.customer_email %>
+        <%= @inquiry.text %>
+      </span>
 </div>

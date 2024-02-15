@@ -12,9 +12,10 @@
 
 ActiveRecord::Schema[7.0].define(version: 2024_02_14_145028) do
   create_table "inquiries", charset: "utf8", force: :cascade do |t|
-    t.string "name"
+    t.string "reference_number"
+    t.string "invoice_number"
+    t.string "customer_email"
     t.string "text"
-    t.text "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
