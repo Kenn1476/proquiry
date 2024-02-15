@@ -1,7 +1,7 @@
 <div class="contents row">
   <div class="container">
     <h3>編集する</h3>
-    <%= form_with(model: @inquiry, local: true) do |form| %>
+    <%= form_with(model: @inquiries, local: true) do |form| %>
       <%= form.text_field :reference_number, placeholder: "Reference Number" %>
       <%= form.text_field :invoice_number, placeholder: "Invoice Number" %>
       <%= form.text_field :customer_email, placeholder: "Customer Email" %>
